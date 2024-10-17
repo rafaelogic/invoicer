@@ -1,13 +1,13 @@
 <template>
     <div class="w-full mt-10 mb-12">
-        <form @submit.prevent="handleSubmit" class="space-y-6">
+        <form class="space-y-6">
             <h1 class="text-md font-bold">Details</h1>
 
             <div class="mt-2 w-1/4">
                 <InputField label="Invoice #" v-model="invoiceData.number" type="number" inputId="number" />
             </div>
 
-            <InputField label="Invoice To" v-model="invoiceData.to" type="text" inputId="to" />
+            <InputField label="Invoice To" v-model="invoiceData.to" type="text" inputId="to"/>
             <InputField label="Invoice From" v-model="invoiceData.from" type="text" inputId="from" />
             <InputField label="Invoice Date" v-model="invoiceData.date" type="date" inputId="date" />
             <InputField label="Invoice Subject" v-model="invoiceData.subject" type="text" inputId="subject" />
@@ -92,7 +92,7 @@
   
 <script lang="ts">
 import { useInvoiceStore } from '../../stores/invoice';
-import { defineComponent, watchEffect } from 'vue';
+import { defineComponent } from 'vue';
 import InputField from '@/components/Fragments/Forms/InputField.vue'
 
 export default defineComponent({
@@ -100,11 +100,7 @@ export default defineComponent({
         InputField
     },
     setup() {
-        const { invoiceData, updateInvoiceData, submitInvoiceData } = useInvoiceStore();
-
-        const handleSubmit = () => {
-            submitInvoiceData();
-        }
+        const { invoiceData, updateInvoiceData } = useInvoiceStore();
 
         const handleUpdate = () => {
             updateInvoiceData(invoiceData);
@@ -112,11 +108,8 @@ export default defineComponent({
 
         return {
             invoiceData,
-            handleSubmit,
             handleUpdate,
         }
     }
 });
 </script>
-  
-  

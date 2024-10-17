@@ -1,0 +1,46 @@
+{
+  "number": 0,
+  "to": "",
+  "from": "",
+  "date": "",
+  "subject": "",
+  "headers": "",
+  "payRateInfo": {
+    "monthlyRate": 73800.0,
+    "dailyRate": 4100.0,
+    "fridayRates": 2050.0,
+    "hourlyRate": 512.5
+  },
+  "items": {
+    "weekdays": {
+      "description": "Weekdays 8 hours",
+      "quantity": 0,
+      "unitPrice": 4100,
+      "total": 0.0
+    },
+    "fridays": {
+      "description": "Weekdays 4 hours (Friday)",
+      "quantity": 0,
+      "unitPrice": 2050,
+      "total": 0.0
+    },
+    "otFridays": {
+      "description": "<strong>Overtime</strong> Friday 4 hours",
+      "quantity": 0,
+      "unitPrice": 2050,
+      "total": 0.0
+    },
+    "otWeekdays": {
+      "description": "<strong>Overtime</strong> Weekdays 2 hours",
+      "quantity": 0,
+      "unitPrice": 1025,
+      "total": 0.0
+    },
+    "otWeekends": {
+      "description": "<strong>Overtime</strong> Weekends (8 hours)",
+      "quantity": 0,
+      "unitPrice": 4100,
+      "total": 0.0
+    }
+  }
+}

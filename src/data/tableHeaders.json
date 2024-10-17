@@ -1,0 +1,8 @@
+{
+    "tableHeaders": [
+        "description",
+        "qty",
+        "unit price",
+        "total"
+    ]
+  }
